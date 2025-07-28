@@ -22,7 +22,7 @@ class ChangeHandler(FileSystemEventHandler):
             try:
                 python_executable = os.path.join(os.getcwd(), '.venv', 'bin', 'python')
                 result = subprocess.run(
-                    [python_executable, "lib/debug.py"],
+                    [python_executable, "debug.py"],
                     capture_output=True,
                     text=True,
                     check=True
